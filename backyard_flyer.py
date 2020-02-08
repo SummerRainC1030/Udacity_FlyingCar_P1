@@ -72,6 +72,7 @@ class BackyardFlyer(Drone):
         TODO: Implement this method
         This triggers when `MsgID.STATE` is received and self.armed and self.guided contain new data
         """
+        
         if self.in_mission:
             if self.flight_state == States.MANUAL:
                 self.arming_transition()
